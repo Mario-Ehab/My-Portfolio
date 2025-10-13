@@ -9,17 +9,14 @@
   transition: 0.7s ease;
 }
 
-/* تعريف ارتفاع الهيدر لنعمل مسافة ثابتة تحت الهيدر */
 :root {
-  --header-height: 70px; /* تقدر تغير الرقم لو ارتفاع هيدرك أكبر/أصغر */
+  --header-height: 70px; 
 }
 
-/* إجبار الهيدر يأخذ هذا الارتفاع */
 header {
   height: var(--header-height);
 }
 
-/* نخلي أي سكول عند الانتقال للعناوين ياخد في الاعتبار ارتفاع الهيدر */
 html {
   scroll-padding-top: calc(var(--header-height) + 10px);
 }
@@ -53,7 +50,7 @@ header {
 }
 
 .menu-icon {
-  display: none; /* مخفية على اللابتوب */
+  display: none; 
   font-size: 1.8em;
   cursor: pointer;
 }
@@ -62,8 +59,8 @@ header {
 
 
 section {
-  padding-top: calc(var(--header-height) + 30px); /* يضمن مسافة فوق المحتوى */
-  padding-left: 200px;   /* احتفظ بقيمك لليمين والشمال كما تريد للـ desktop */
+  padding-top: calc(var(--header-height) + 30px); 
+  padding-left: 200px;   
   padding-right: 200px;
   padding-bottom: 100px;
 }
@@ -204,7 +201,7 @@ transform: scale(1.1);
 
 .card {
   background-color: #fff;
-  min-height: 250px; /* يخلي الكرتين نفس الطول تقريبًا */
+  min-height: 250px; 
   max-width: 18em;
   min-width: 18em;
   box-shadow: 0 5px 25px #9a9999;
@@ -471,9 +468,9 @@ font-weight: bold;
 
 
 
-/* ============================= */
-/* 📱 Responsive Design for Mobile */
-/* ============================= */
+
+/*  Responsive Design for Mobile */
+
 
 
  @media (max-width: 768px) {
@@ -496,17 +493,17 @@ font-weight: bold;
 
 
   .navigation {
-   display: none; /* نخفي اللينكات في الموبايل افتراضياً */
+   display: none; 
   flex-direction: column;
   background: #333;
   position: absolute;
-  top: 60px; /* حسب ارتفاع الـ navbar */
+  top: 60px; 
   right: 0;
   width: 100%;
   text-align: center;
   }
   .navigation.active {
-  display: flex; /* لما نضغط على الأيقونة تظهر */
+  display: flex; 
 }
 
   .navigation a {
@@ -516,40 +513,36 @@ font-weight: bold;
 
 
   .menu-icon {
-  display: block; /* تظهر في الموبايل فقط */
+  display: block; 
 }
 
-  /* داخل @media (max-width: 768px) استبدل إعدادات .main بالآتي */
 .main {
-  /* احتفظ بشكل صفّي (مثل اللابتوب) */
-  flex-direction: row;      /* جايب النص و الصورة جنب بعض */
-  flex-wrap: nowrap;        /* لا نكسر الأعمدة */
+  flex-direction: row;     
+  flex-wrap: nowrap;         
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   padding: 20px 10px;
   width: 100%;
-  overflow-x: auto;        /* لو ضاقت المساحة يسمح بالتمرير الأفقي بدل القطع */
+  overflow-x: auto;        
   -webkit-overflow-scrolling: touch;
 }
 
-/* النص يتقلص لكن لا يسمح بتخطّي الحاوية */
 .text {
-  flex: 1 1 50%;   /* ينمو/ينكمش لكن يهدف لأخذ ~60% من المساحة */
-  min-width: 0;    /* مهم لتمكين النص من الانكماش داخل flex */
-  text-align: left; /* زي شكل اللابتوب — لو عايز مركزي خليه center */
+  flex: 1 1 50%;   
+  min-width: 0;    
+  text-align: left; 
 }
 
-/* الصورة تاخد حيز ثابت بالنسبة للنص */
 .main-profile {
-  flex: 0 0 35%;   /* لا يتقلص أكثر من 35%، يضمن بقاء الصورة على اليمين */
+  flex: 0 0 35%;   
   display: flex;
   justify-content: flex-end;
 }
 
 .main-profile img {
   width: 50vw;
-  max-width: 320px;  /* قلل الحجم على الموبايل علشان يدخل جنب النص */
+  max-width: 320px;  
   height: auto;
   border-radius: 50%;
   margin-top: 0;
@@ -594,6 +587,7 @@ font-weight: bold;
     font-size: 0.9em;
   }
 }
+
 
 
 
