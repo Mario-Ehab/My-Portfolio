@@ -35,16 +35,7 @@
         <h3>Front-end Developer</h3>
         <a href="images/Mario E - CV.pdf"  target="_blank" class="main-btn">View My CV</a>
         <div class="social-icons">
-          <a
-            href="https://www.facebook.com/share/1DEYEa4HUn/?mibextid=wwXIfr"
-            target="_blank"
-            ><i class="fa-brands fa-facebook"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/mario0o_ehab?igsh=MTJsdnQ1ZnU0djJrMA%3D%3D&utm_source=qr"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i>
-          </a>
+         
           <a href="https://wa.me/+201118810908" target="_blank"
             ><i class="fa-brands fa-whatsapp"></i>
           </a>
@@ -181,16 +172,6 @@ I’m a fast learner, a good team player, and always looking for ways to grow an
 
 <div class="social-icons">
   
-          <a
-            href="https://www.facebook.com/share/1DEYEa4HUn/?mibextid=wwXIfr"
-            target="_blank"
-            ><i class="fa-brands fa-facebook"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/mario0o_ehab?igsh=MTJsdnQ1ZnU0djJrMA%3D%3D&utm_source=qr"
-            target="_blank"
-            ><i class="fa-brands fa-instagram"></i>
-          </a>
           <a href="https://wa.me/+201118810908" target="_blank"
             ><i class="fa-brands fa-whatsapp"></i>
           </a>
@@ -217,12 +198,10 @@ I’m a fast learner, a good team player, and always looking for ways to grow an
   const navigation = document.querySelector('.navigation');
   const navLinks = document.querySelectorAll('.navigation a');
 
-  // فتح/إغلاق القائمة لما نضغط على الأيقونة
   menuIcon.onclick = () => {
     navigation.classList.toggle('active');
   };
 
-  // إغلاق القائمة لما نضغط على أي لينك
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       navigation.classList.remove('active');
@@ -239,19 +218,15 @@ I’m a fast learner, a good team player, and always looking for ways to grow an
     const main = document.querySelector('.main');
     if (!main) return;
 
-    // لو الشاشة عريضة (زي اللابتوب أو الموبايل بالعرض)
     if (window.innerWidth > window.innerHeight) {
-      main.style.flexDirection = 'row'; // النص والصورة جنب بعض
+      main.style.flexDirection = 'row'; 
     } else {
-      main.style.flexDirection = 'row'; // نخليهم برضو جنب بعض حسب طلبك
-      // لو حبيتهم فوق بعض فالسطر الجاي خليه 'column'
+      main.style.flexDirection = 'row'; 
       // main.style.flexDirection = 'column';
     }
   }
 
-  // أول ما الصفحة تفتح
   window.addEventListener('load', adjustLayout);
-  // وكل مرة المستخدم يدوّر الموبايل
   window.addEventListener('resize', adjustLayout);
 </script>
 
@@ -260,3 +235,4 @@ I’m a fast learner, a good team player, and always looking for ways to grow an
 </html>
 
  
+
