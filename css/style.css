@@ -129,7 +129,7 @@ section {
 .main-profile img {
   width: 300px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 20%;
   object-fit: cover;
   box-shadow:  0 10px 25px rgba(0, 0, 0, 0.3);
   border: 5px solid #fff;
@@ -587,6 +587,7 @@ font-weight: bold;
     font-size: 0.9em;
   }
 }
+
 
 
 
